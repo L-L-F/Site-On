@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="estilo.css">
+<title>CrypitoForms</title>
+</head>
+<body>
+<header class="site-header" id="header"> <a href="#"> <img id="img" src="img/cripitografia.png"> </a> </header>
+<div id="crip" class="card">
+  <h5 class="card-header">Criptografar/Descriptografar</h5>
+  <div class="card-body">
+    <div class="form-row">
+        <label for="inputText1">Palavra para Criptografar</label>
+        <input type="text" class="form-control" id="inputTexto1"  style="text-transform:uppercase">
+    </div>
+	<br>
+    <input class="btn btn-success" type="button" id="inputBotton1" value="Criptografar">
+	<input class="btn btn-danger" type="button" id="inputBotton2" value="Descriptografar">
+	<input class="btn btn-secondary" type="button" id="inputBottonL1" value="Limpar">
+  </div>
+  <div id="res1" class="alert alert-success" role="alert">Resposta </div>
+  <div id="res2" class="alert alert-danger" role="alert">Resposta </div>
+</div>
+<script src="controle.js"></script>
+
+</body>
+</html>
