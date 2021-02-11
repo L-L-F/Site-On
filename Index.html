@@ -10,21 +10,41 @@
 <body>
 <header class="site-header" id="header"> <a href="#"> <img id="img" src="img/cripitografia.png"> </a> </header>
 <div id="crip" class="card">
-  <h5 class="card-header">Criptografar/Descriptografar</h5>
+  <h5 class="card-header">Criptografar</h5>
   <div class="card-body">
     <div class="form-row">
+      <div class="form-group col-md-6">
         <label for="inputText1">Palavra para Criptografar</label>
         <input type="text" class="form-control" id="inputTexto1"  style="text-transform:uppercase">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputChave1">Chave da Criptografia</label>
+        <input type="number" min="0" value="0" step="any" class="form-control" id="inputPassword1">
+      </div>
     </div>
-	<br>
-    <input class="btn btn-success" type="button" id="inputBotton1" value="Criptografar">
-	<input class="btn btn-danger" type="button" id="inputBotton2" value="Descriptografar">
+    <input class="btn btn-primary" type="button" id="inputBotton1" value="Criptografar">
 	<input class="btn btn-secondary" type="button" id="inputBottonL1" value="Limpar">
   </div>
-  <div id="res1" class="alert alert-success" role="alert">Resposta </div>
-  <div id="res2" class="alert alert-danger" role="alert">Resposta </div>
+  <div id="res1" class="alert alert-primary" role="alert">Resposta </div>
+</div>
+<div id="crip" class="card">
+  <h5 class="card-header">Descriptografar</h5>
+  <div class="card-body">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputText1">Palavra para Descriptografar</label>
+        <input type="text" class="form-control" id="inputTexto2"  style="text-transform:uppercase">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputChave1">Chave da Descriptografia</label>
+        <input type="number" class="form-control" min="0" value="0" step="any" id="inputPassword2">
+      </div>
+    </div>
+    <input class="btn btn-primary" type="button" id="inputBotton2" value="Descriptografar">
+	<input class="btn btn-secondary" type="button" id="inputBottonL2" value="Limpar">
+  </div>
+  <div id="res2" class="alert alert-primary" role="alert">Resposta </div>
 </div>
 <script src="controle.js"></script>
-
 </body>
 </html>
